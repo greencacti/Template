@@ -13,6 +13,7 @@ import javax.persistence.Id;
  */
 @Entity
 public class Person  implements Serializable {
+
     private static final long serialVersionUID = 1L;
 
     @Id
@@ -20,10 +21,17 @@ public class Person  implements Serializable {
     private Long id;
 
     @Column(nullable = false)
+    private String uuid;
+
+    @Column(nullable = false)
     private String name;
 
     @Column(nullable = false)
     private int age;
+
+    public String getUuid() {
+        return uuid;
+    }
 
     public String getName() {
         return name;

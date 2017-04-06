@@ -1,0 +1,1 @@
+insert into person(uuid, name, age) values ('6AAD0337-A295-4F07-A664-E82ED066BFBD', 'Benjamin Wang', '24')

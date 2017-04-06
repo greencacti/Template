@@ -1,4 +1,4 @@
-package com.greencacti.service;
+package com.greencacti.web;
 
 import com.greencacti.config.Config;
 import org.springframework.beans.factory.annotation.Autowired;
