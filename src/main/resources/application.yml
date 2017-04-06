@@ -1,0 +1,7 @@
+company:
+  name: VMware
+  department:
+    name: SABU
+    employees:
+      - Benjamin Wang
+      - Jarod Zhang
