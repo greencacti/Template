@@ -1,7 +1,28 @@
-server:
-  port: 8080
+##############################################
+#    Application Server Configuration
+##############################################
+server.port: 8080
+server.ssl.enabled: true
+server.ssl.key-store: classpath:security/keystore.jks
+server.ssl.key-password: secret
 
 
+##############################################
+#    Management over HTTP
+##############################################
+management.security.enabled: false
+management.context-path: /management
+management.port: 8090
+management.ssl.enabled: false
+endpoints.hypermedia.enabled: true
+
+management.info.git.mode: full
+info.app.name: Template Application
+
+
+##############################################
+#    Database Connection Example
+##############################################
 #spring:
 #  datasource:
 #    url: jdbc:mysql://localhost/template
@@ -9,16 +30,14 @@ server:
 #    password: Hello925
 #    driver-class-name: com.mysql.jdbc.Driver
 
-management.security.enabled: false
-endpoints.hypermedia.enabled: true
 
-management.info.git.mode: full
-info.app.name: Template Application
-
+##############################################
+#    Service Configuration Example
+##############################################
 company:
-  name: VMware
+  name: Microsoft
   department:
-    name: SABU
+    name: Azure
     employees:
       - Benjamin Wang
       - Jarod Zhang
